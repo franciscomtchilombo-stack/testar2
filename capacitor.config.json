@@ -1,0 +1,8 @@
+{
+  "appId": "app.tecladoumbundu.qwerty",
+  "appName": "Teclado de Umbundu",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}

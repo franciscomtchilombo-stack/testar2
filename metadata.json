@@ -1,0 +1,8 @@
+{
+  "name": "Teclado Nasal QWERTY",
+  "description": "Teclado QWERTY interativo com acesso direto às vogais nasais (ã, ẽ, ĩ, õ, ũ) e consoante ñ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

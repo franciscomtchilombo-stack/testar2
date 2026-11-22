@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+.keycap-shadow {
+  box-shadow:
+    0 2px 0 0 #D4D7DF,
+    0 1px 2px 0 rgba(20, 21, 24, 0.06);
+}
+
+.keycap-shadow:active,
+.keycap-pressed {
+  transform: translateY(1.5px);
+  box-shadow:
+    0 0.5px 0 0 #D4D7DF,
+    0 0 1px 0 rgba(20, 21, 24, 0.04);
+}
+
+.keycap-accent-shadow {
+  box-shadow:
+    0 2px 0 0 #1D4ED8,
+    0 1px 3px 0 rgba(37, 99, 235, 0.25);
+}
+
+.keycap-accent-shadow:active,
+.keycap-accent-pressed {
+  transform: translateY(1.5px);
+  box-shadow:
+    0 0.5px 0 0 #1D4ED8,
+    0 0 1px 0 rgba(37, 99, 235, 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .keycap-shadow:active,
+  .keycap-pressed,
+  .keycap-accent-shadow:active,
+  .keycap-accent-pressed {
+    transform: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
